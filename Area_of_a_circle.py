@@ -1,4 +1,2 @@
 r=int(input())
-ri=3.14*r*r
-print(float('%.2f'%(ri)))
-#print(ri)
+print("{0:.2f}".format(3.14*r*r))
