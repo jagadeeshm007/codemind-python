@@ -1,9 +1,7 @@
-t=int(input())
-s=0
-for i in range(1,t):
-    if t%i==0:
-        s=s+i
-if s==t:
-    print("True")
-else:
-    print("False")
+a=int(input())
+c=0
+for i in range(1,a):
+    if a%i==0:
+        c+=i
+j=(a==c)
+print(j if "True" else "False")
