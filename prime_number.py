@@ -1,7 +1,11 @@
-n=int(input())
-for i in range(2,n):
-    if n%i==0:
-        print('not a prime')
-        break
+def count(a):
+    c=0
+    for i in range(1,a+1):
+        if a%i==0:
+            c+=1
+    return c
+a=int(input())
+if count(a)==2:
+    print("prime")
 else:
-    print('prime')
+    print("not a prime")
