@@ -1,9 +1,10 @@
-n=int(input())
-k=0
-for i in range(n):
-    if i*(i+1)==n:
-        print("YES")
+a=int(input())
+c=0
+for i in range(a):
+    if i*(i+1)==a:
+        c=1
         break
-    if i*(i+1)>n:
-        print("NO")
-        break
+if c==1:
+    print("YES")
+else:
+    print("NO")
