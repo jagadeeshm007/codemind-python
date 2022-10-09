@@ -1,14 +1,12 @@
-def sum(n):
-    k=0
-    for i in range(1,n):
-        if n%i==0:
-            k=k+i
-    return k
+def sod(a):
+    su=0
+    for i in range(1,a):
+        if a%i==0:
+            su+=i
+    return su
 a=int(input())
 b=int(input())
-n=sum(a)
-m=sum(b)
-if a==m and b==n:
+if sod(a)==b and sod(b)==a:
     print("Amicable")
 else:
     print("Not Amicable")
